@@ -1,6 +1,3 @@
 {{#each person in controller}}
-<tr>
-  <td class="name">{{person.fullName}}</td>
-  <td><button class="delete" {{action "deletePerson" person}}>Delete</button></td>
-</tr>
+<span class="name">{{person.firstName}}</span>
 {{/each}}
