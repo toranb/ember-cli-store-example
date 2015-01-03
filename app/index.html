@@ -19,6 +19,15 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-cli-store-example.js"></script>
+    
+    <script>
+      var people = [{id: 1, firstName: "grunt", lastName: "cli"}, {id: 2, firstName: "ember", lastName: "js"}];
+      $.fauxjax.new({
+        url: '/api/people',
+        dataType: 'json',
+        responseText: people
+      });
+    </script>
 
     {{content-for 'body-footer'}}
   </body>
