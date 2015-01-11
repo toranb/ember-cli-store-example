@@ -4,7 +4,7 @@ import startApp from '../helpers/start-app';
 
 var App;
 
-module('PromiseMixin Acceptance Test', {
+module('Example Acceptance Test', {
     setup: function() {
         App = startApp();
     },
@@ -13,7 +13,7 @@ module('PromiseMixin Acceptance Test', {
     }
 });
 
-test("GET requests will resolve correctly", function() {
+test("people route will resolve promise and bind ember objects", function() {
     var people = [{id: 1, firstName: 'toran', lastName: 'billups'}, {id: 2, firstName: 'brandon', lastName: 'williams'}];
     $.fauxjax.new({type: "GET", url: "/api/people", dataType: 'json', responseText: people});
     visit("/");
