@@ -21,10 +21,9 @@
     <script src="assets/ember-cli-store-example.js"></script>
     
     <script>
-      var people = [{id: 1, firstName: "grunt", lastName: "cli"}, {id: 2, firstName: "ember", lastName: "js"}];
+      var people = [{id: 1, firstName: "first", lastName: "50022", email: "hi@hi.com"}, {id: 2, firstName: "last", lastName: "09123", email: "yo@yo.com"}];
       $.fauxjax.new({
         url: '/api/people',
-        dataType: 'json',
         responseText: people
       });
     </script>
